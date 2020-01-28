@@ -1,0 +1,56 @@
+<svg version="1.1" baseProfile="full" width="1214" height="395" viewbox="0 0 1214 395" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" style="font-weight:bold; font-size:12pt; font-family:'Calibri', Helvetica, sans-serif;;stroke-width:3;stroke-linejoin:round;stroke-linecap:round">
+  <title >nomnoml</title>
+  <desc >#edgeMargin: 5
+#padding: 20
+#.blob: visual=roundrect
+#.user: visual=actor 
+[&lt;blob&gt; Traitements]
+[&lt;blob&gt; Services]
+[Application|loggedUser=false;defaultFolder = &quot;P:\Tempo&quot;]
+[&lt;user&gt; Utilisateurs]
+[&lt;blob&gt; Services]
+
+[Traitements]-&gt;[Application]
+[Utilisateurs]-&gt;[Application]
+[Services]-&gt;[Application]
+[Application]-&gt;[Données persistantes ]
+[Application]-&gt;[Données non persistantes]
+[Application]-&gt;[Données temporaires]
+[Application]-&gt;[Données d&apos;environnement]</desc>
+  <path d="M413.3 90.5 L413.3 110.5 L457.2 130.5 L457.2 130.5 " style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M442.8 129.8 L451.1 127.7 L447.3 120.1 L457.2 130.5 Z" style="stroke:#07769C;fill:#07769C;stroke-dasharray:none;"></path>
+  <path d="M612.8 90.5 L612.8 110.5 L611.1 130.5 L611.1 130.5 " style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M606.9 116.8 L611.6 123.9 L617.5 117.7 L611.1 130.5 Z" style="stroke:#07769C;fill:#07769C;stroke-dasharray:none;"></path>
+  <path d="M797.8 90.5 L797.8 110.5 L753.8 130.5 L753.8 130.5 " style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M763.7 120.1 L759.9 127.7 L768.2 129.8 L753.8 130.5 Z" style="stroke:#07769C;fill:#07769C;stroke-dasharray:none;"></path>
+  <path d="M457 226.5 L149 285.5 L149 305.5 L149 305.5 " style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M143.7 292.2 L149 298.8 L154.3 292.2 L149 305.5 Z" style="stroke:#07769C;fill:#07769C;stroke-dasharray:none;"></path>
+  <path d="M489.4 265.5 L455 285.5 L455 305.5 L455 305.5 " style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M449.7 292.2 L455 298.8 L460.3 292.2 L455 305.5 Z" style="stroke:#07769C;fill:#07769C;stroke-dasharray:none;"></path>
+  <path d="M721.6 265.5 L756 285.5 L756 305.5 L756 305.5 " style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M750.7 292.2 L756 298.8 L761.3 292.2 L756 305.5 Z" style="stroke:#07769C;fill:#07769C;stroke-dasharray:none;"></path>
+  <path d="M754 227.1 L1052 285.5 L1052 305.5 L1052 305.5 " style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M1046.7 292.2 L1052 298.8 L1057.3 292.2 L1052 305.5 Z" style="stroke:#07769C;fill:#07769C;stroke-dasharray:none;"></path>
+  <rect x="462.5" y="135.5" height="125" width="287" style="stroke:#07769C;fill:#B8DBEE;stroke-dasharray:none;"></rect>
+  <text x="606" y="169" style="fill: #07769C;text-anchor: middle;">Application</text>
+  <path d="M462.5 190.5 L749.5 190.5" style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <text x="482.5" y="224" style="fill: #07769C;font-weight:normal;">loggedUser=false</text>
+  <text x="482.5" y="239" style="fill: #07769C;font-weight:normal;">defaultFolder = &quot;P:\Tempo&quot;</text>
+  <rect x="340.5" y="30.5" rx="27.5" ry="27.5" height="55" width="145" style="stroke:#07769C;fill:#B8DBEE;stroke-dasharray:none;"></rect>
+  <text x="413" y="64" style="fill: #07769C;font-weight:normal;text-anchor: middle;">Traitements</text>
+  <rect x="739.5" y="30.5" rx="27.5" ry="27.5" height="55" width="116" style="stroke:#07769C;fill:#B8DBEE;stroke-dasharray:none;"></rect>
+  <text x="797.5" y="64" style="fill: #07769C;font-weight:normal;text-anchor: middle;">Services</text>
+  <circle r="10" cx="612.8" cy="25.5" style="stroke:#07769C;fill:#B8DBEE;stroke-dasharray:none;"></circle>
+  <path d="M612.8 35.5 L612.8 55.5" style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M602.8 45.5 L622.8 45.5" style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <path d="M602.8 65.5 L612.8 55.5 L622.8 65.5" style="stroke:#07769C;fill:none;stroke-dasharray:none;"></path>
+  <text x="612.5" y="79" style="fill: #07769C;font-weight:normal;text-anchor: middle;">Utilisateurs</text>
+  <rect x="30.5" y="310.5" height="55" width="237" style="stroke:#07769C;fill:#B8DBEE;stroke-dasharray:none;"></rect>
+  <text x="149" y="344" style="fill: #07769C;text-anchor: middle;">Données persistantes</text>
+  <rect x="317.5" y="310.5" height="55" width="275" style="stroke:#07769C;fill:#B8DBEE;stroke-dasharray:none;"></rect>
+  <text x="455" y="344" style="fill: #07769C;text-anchor: middle;">Données non persistantes</text>
+  <rect x="642.5" y="310.5" height="55" width="227" style="stroke:#07769C;fill:#B8DBEE;stroke-dasharray:none;"></rect>
+  <text x="756" y="344" style="fill: #07769C;text-anchor: middle;">Données temporaires</text>
+  <rect x="919.5" y="310.5" height="55" width="265" style="stroke:#07769C;fill:#B8DBEE;stroke-dasharray:none;"></rect>
+  <text x="1052" y="344" style="fill: #07769C;text-anchor: middle;">Données d&apos;environnement</text>
+</svg>

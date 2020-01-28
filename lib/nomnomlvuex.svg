@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="261"
+   height="398"
+   viewbox="0 0 130.5 199"
+   style="font-weight:bold;font-size:16px;font-family:Calibri, Helvetica, sans-serif;stroke-width:3;stroke-linecap:round;stroke-linejoin:round"
+   id="svg40"
+   sodipodi:docname="nomnomlvuex.svg"
+   inkscape:version="0.92.0 r15299">
+  <metadata
+     id="metadata46">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>nomnoml</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs44" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview42"
+     showgrid="false"
+     inkscape:zoom="1.6771578"
+     inkscape:cx="124.2671"
+     inkscape:cy="156.06842"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg40"
+     width="261px" />
+  <title
+     id="title12">nomnoml</title>
+  <desc
+     id="desc14">
+#.action : visual=ellipse stroke=#FEFEFE fill=#837fc3
+#.state : visual=ellipse stroke=#FEFEFE fill=#635153
+#.view : visual=ellipse stroke=#FEFEFE fill=#E72928
+
+[&lt;action&gt; Action]--&gt;[&lt;state&gt; State]
+[&lt;state&gt; State]--&gt;[&lt;view&gt;View]
+[&lt;view&gt; View]--&gt;[&lt;action&gt; Action]</desc>
+  <path
+     d="m 67.248212,38.455549 -23.111552,22.77 v 22.77 0"
+     style="fill:none;stroke:#33322e;stroke-width:3.41550016;stroke-dasharray:6.831, 6.831"
+     id="path16"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 38.10261,68.853499 6.03405,7.5141 6.03405,-7.5141 -6.03405,15.14205 z"
+     style="fill:#33322e;stroke:#33322e;stroke-width:3.41550016;stroke-dasharray:none"
+     id="path18"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 44.13666,119.28905 v 22.77 l 23.111552,22.77 v 0"
+     style="fill:none;stroke:#33322e;stroke-width:3.41550016;stroke-dasharray:6.831, 6.831"
+     id="path20"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 52.106164,158.45345 9.677248,1.02465 -1.1385,-9.67725 6.6033,15.0282 z"
+     style="fill:#33322e;stroke:#33322e;stroke-width:3.41550016;stroke-dasharray:none"
+     id="path22"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 102.99711,164.82905 23.11155,-22.77 v -40.41675 0 -40.416751 0 l -23.11155,-22.77 v 0"
+     style="fill:none;stroke:#33322e;stroke-width:3.41550016;stroke-dasharray:6.831, 6.831"
+     id="path24"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 118.13916,44.831149 -9.67725,-1.02465 1.13851,9.67725 -6.60331,-15.0282 z"
+     style="fill:#33322e;stroke:#33322e;stroke-width:3.41550016;stroke-dasharray:none"
+     id="path26"
+     inkscape:connector-curvature="0" />
+  <ellipse
+     cx="85.122673"
+     cy="20.8088"
+     rx="41.555248"
+     ry="17.646751"
+     style="fill:#837fc3;stroke:#fefefe;stroke-width:3.41550016;stroke-dasharray:none"
+     id="ellipse28" />
+  <text
+     x="85.69191"
+     y="27.639801"
+     style="font-weight:normal;font-size:18.2159996px;text-anchor:middle;fill:#fefefe;stroke-width:3.41550016"
+     id="text30">Action</text>
+  <ellipse
+     cx="44.136662"
+     cy="101.6423"
+     rx="36.431999"
+     ry="17.646751"
+     style="fill:#635153;stroke:#fefefe;stroke-width:3.41550016;stroke-dasharray:none"
+     id="ellipse32" />
+  <text
+     x="44.136662"
+     y="108.4733"
+     style="font-weight:normal;font-size:18.2159996px;text-anchor:middle;fill:#fefefe;stroke-width:3.41550016"
+     id="text34">State</text>
+  <ellipse
+     cx="85.122673"
+     cy="182.4758"
+     rx="30.7395"
+     ry="17.646751"
+     style="fill:#e72928;stroke:#fefefe;stroke-width:3.41550016;stroke-dasharray:none"
+     id="ellipse36" />
+  <text
+     x="85.122673"
+     y="189.30679"
+     style="font-weight:normal;font-size:18.2159996px;text-anchor:middle;fill:#fefefe;stroke-width:3.41550016"
+     id="text38">View</text>
+</svg>

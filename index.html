@@ -1,50 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/white.css" />
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+	
+    <div class="reveal">
+      <div class="slides">
+		<div style="top: 50px; color: #FEFEFE; background-color:#FD9a28 ; text-align: left ; padding-left: 2% ">Présentation</div>
+        <section>
+          <section>Prise de connaissance avec l'état d'une application</section>
+          <section data-markdown>
+            <textarea data-template>
+							#### Définition (peu scientifique)
+							
+							C'est la configuration, les attributs, la condition et les données d'une application à un moment précis de son exécution. Autant logique (software) que physique (hardware).
+							
+						</textarea
+            >
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+							#### Plus concrêtement
+							<img src="lib/nomnoml.svg" style="background:none; border:none; box-shadow:none;"></img>
+						</textarea
+            >
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+							
+							- Est modifié par différents intervenants (utilisateurs, traitements, etc.)
+							- Certaines modifications sont faites par un traitement qui appelle un autre traitement qui fait des modifications à son tour et appelle un autre traitement et ainsi de suite
+							
+						</textarea
+            >
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+							#### Constats
+							- Comportement de l'application -> **inconnu**
+							- Débogage pas-à-pas -> **incontournable**
+							- La maintenance et l'évolution -> **complexes**
+							- Les essais de non régression -> **obligatoires et peu efficaces**
+							
+						</textarea
+            >
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+							#### Causes
+							
+							- Les données changent (mutation des données)
+							- Les traitements parfois asynchrones
+							- La combinaison de ces deux facteurs
+							
+							
+						</textarea>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+							#### La mutabilité
+							  
+							x++  
+							Incrémente x de 1			
+							
+						</textarea
+            >
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+							#### L'immuabilité
+							
+							3 + 2 = 5	
+							- 3 reste 3
+							- 2 reste 2
+							- 5 est une **nouvelle** valeur	
+							
+						</textarea>
+		  </section>
+		  <section data-markdown>
+            <textarea data-template>
+							#### L'immuabilité
+							
+							En rendant les variables d'une application (donc son état) immuables, on doit créer de nouvelles valeurs de ces variables.
+							
+						</textarea>
+          </section>
+		</section>
+		
+		<section>
+			<section data-markdown>
+			  <textarea data-template style="text-align: right">		
+						#### L'asynchronicité
+						C'est le lancement d'un traitement qui doit rendre un résultat plus tard. Le traitement qui l'exécute n'attend pas la fin du code asynchrone.
+						  </textarea
+			  >
+			</section>
+			<section data-markdown>
+			  <textarea data-template>	
+				#### L'asynchronicité
+				Lorsque le code asynchrone se termine il notifie le traitement principal en lui communiquant ses résultats. Le traitement principal se met à jour avec ses nouvelles données. 
+						  </textarea>
+			</section>
+			<section data-markdown>
+			  <textarea data-template>
+							  
+						  </textarea>
+			</section>
+		  </section>
+        <section>
+			<section>
+				<h3>Patron de conception</h3>
+				<div style="display: flex;">
+					<div style="flex: 50%;">
+						<font size="5"><ul>
+							<li><font size="5">L'état contient les données de l'application</font></li>
+							<li><font size="5">L'état ne change pas, si une composante change, un nouvel état est généré</font></li>
+							<li><font size="5">Chaque changement de l'état est communiqué à la vue pour mise à jour</font></li>
+							<li><font size="5">Les vues déclenchent des actions</font></li>
+							<li><font size="5">Les actions sont communiquées à l'état pour générer un nouvel état</font></li>
+						</ul></font>
+					</div>
+					<div style="flex: 50%;"><img src="lib/nomnomlvuex.svg" style="background:none; border:none; box-shadow:none;"></img></div>
+				  </div>
+			</section>
+			<section>
+			<div>
+				<h3>L'état</h3>
+					<font size="5"><ul>
+						<li>L'état est un objet</li>
+						<li>L'état est passé en paramètre avec l'action à un réducteur</li>
+						<li>Un nouvel état généré suite à chaque action</li>
+					</ul>
+					</font>
+						<img src="lib/47133006-86ab-4c72-b9d9-a2c18c18cce3_global dataflow.png" style="background:none; border:none; box-shadow:none;">
+				</div>
+			</section>
+			<section>
+				<h3>Exemple</h3>
+			</section>
+		</section>
+      </div>
+    </div>
 
-		<script src="js/reveal.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/highlight/highlight.js" },
+          { src: "plugin/notes/notes.js", async: true }
+        ]
+      });
+    </script>
+  </body>
 </html>
