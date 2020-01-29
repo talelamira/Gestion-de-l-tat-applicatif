@@ -31,7 +31,7 @@
 	
     <div class="reveal">
       <div class="slides">
-		<div style="top: 50px; color: #FEFEFE; background-color:#FD9a28 ; text-align: left ; padding-left: 2% ">Présentation</div>
+		<div style="top: 50px; color: #FEFEFE; background-color:#FD9a28 ; text-align: left ; padding-left: 2% ">ASM (Application state management)</div>
         <section>
           <section>Prise de connaissance avec l'état d'une application</section>
           <section data-markdown>
@@ -152,7 +152,7 @@
 			</section>
 			<section>
 			<div>
-				<h3>L'état</h3>
+				<h3>L'état (source de vérité)</h3>
 					<font size="5"><ul>
 						<li>L'état est un objet</li>
 						<li>L'état est passé en paramètre avec l'action à un réducteur</li>
@@ -163,8 +163,61 @@
 				</div>
 			</section>
 			<section>
-				<h3>Exemple</h3>
+				<h3>Action</h3>
+				<font size="6"><ul>
+					<li><font size="6">On utilise généralement des constantes pour les actions</font></li>
+					<li><font size="6">Indiquent une intention forte: <strong>commit</strong>, <strong>dispatch</strong></font></li>
+					<li><font size="6">Doit être accompagnée par l'état à partir duquel on souhaite générer un nouvel état</font></li>
+					<li><font size="6">Le nom de l'action a, généralement, une signification affaire</font></li>
+					<li><font size="6">Les actions doivent être "des fonctions pures". Même input -> même output</font></li>
+					<li><font size="6">Les actions ne doivent pas effectuer des opération I/O</font></li>
+				</ul></font>
 			</section>
+			<section>
+				<h3>Réducteur (reducer)</h3>
+				<font size="6"><ul>
+					<li><font size="6">Un réducteur reçoit plusieurs paramètres en entrée et répond par un seul.</font></li>
+					<li><font size="6">Le réducteur reçoit l'état et l'action</font></li>
+					<li><font size="6">La structure de son code est généralement un CASE-SWITCH ou un IF-ELSEIF-ELSE</font></li>
+					<li><font size="6">La structure du réducteur pourrait se baser sur des notions d'héritage dans le cas de POO</font></li>
+				</ul></font>
+			</section>
+			<section>
+				<h3>Middleware</h3>
+				<font size="6"><ul>
+					<li><font size="6">Sont lancés à chaque exécution d'action</font></li>
+					<li><font size="6">Réalisent les opération I/O pour garder les actions à l'état de "fonctions pures"</font></li>
+					<li><font size="6">Sont utiles pour les actions à généraliser systématiquement (log, vérification des accès, compression, crash reporting, etc..)</font></li>
+				</ul></font>
+			</section>
+		</section>
+		<section>
+			<section>Effets secondaires (les bons!)</section>
+			<section>
+				<h3>CTRL+Z</h3>
+				<font size="6"><ul>
+					<li><font size="6">Fonction Undo disponible avez 0 effort!</font></li>
+					<li><font size="6">Peut être rendue disponible entre les sessions (nécessite un serialize de l'état)</font></li>
+				</ul></font>
+			</section>
+			<section>
+				<h3>Débogage et restauration</h3>
+				<font size="6"><ul>
+					<li><font size="6">Avec un Middleware de crashreporting, les dévs disposent de l'état avant le crash et l'action qui a provoquée le crash avec les paramètres</font></li>
+					<li><font size="6">L'application peut être restaurée au dernier état fonctionnel avant le crash</font></li>
+				</ul></font>
+			</section>
+			<section>
+				<h3>Voyage dans le temps</h3>
+				<font size="6"><ul>
+					<li><font size="6">L'évolution de l'état permet de revenir en arrière et de rejouer des scénarios</font></li>
+					<li><font size="6">Peut être utilisé comme tests automatisés dans tous les paliers!!!</font></li>
+					<li><font size="6">Peut être utilisé comme preuve d'audit uniforme pour la même application</font></li>
+				</ul></font>
+			</section>
+		</section>
+		<section>
+			<h1>Démo!</h1>
 		</section>
       </div>
     </div>
